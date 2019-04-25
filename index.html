@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -20,21 +20,28 @@
 	<meta name="description" content="">
 	<meta name="author" content="関森 広大">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<link href="./css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<script src="./js/bootstrap.min.js"></script>
+
 
 </head>
 
 <body style="margin-top: 25px; margin-bottom: 25px;">
 	<div class="container">
-		<ul class="nav nav-tabs">
-			<li class="nav-item"><a href="index.html" class=nav-link active>日本語</a></li>
-			<li class="nav-item"><a href="index-e.html" class=nav-link>English</a></li>
-		</ul>
-		<hr>
-		<h1 class="">関森 広大
-			 <small class="text-muted">(Kodai Sekimori)</small>
+		<header class="fixing">
+			<ul class="nav nav-tabs">
+				<li class="nav-item"><a href="index.html" class="nav-link active">日本語</a></li>
+				<li class="nav-item"><a href="index-e.html" class="nav-link">English</a></li>
+			</ul>
+			<hr>
+			<h1 class="">関森 広大
+			 <small class="text-muted">| Kodai Sekimori</small>
 		 </h1>
+		</header>
 		<hr>
 		<div class="row">
 			<div class="col-lg-4">
@@ -94,6 +101,28 @@
 						<b>布で覆うことによる物体へのタッチインタラクションの付与</b> <a href="https://www.iplab.cs.tsukuba.ac.jp/paper/bachelor/2017/sekimori_thesis.pdf"><img src="img/pdf.png" alt="" width=18 height=18></a></li>
 				</ul>
 				<hr>
+
+				<h2>研究内容</h2>
+
+				<div class="card">
+					<a class="card-header " data-toggle="collapse" href="#nunoTouch" aria-expanded="false" aria-controls="nunoTouch">
+    電気インピーダンス変化に基づき位置識別を行う布型タッチインタフェース
+  </a>
+					<div class="collapse" id="nunoTouch">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-sm-6 col-md-5 research">
+									<a href="img/nuno.jpg" class="thumbnail"><img src="img/nuno.jpg" class="img-fluid img-thumbnail img-responsive" alt=""></a>
+								</div>
+								<div class="col-sm-6 col-md-7">
+									電流を印加した導電布をタッチした際の電気インピーダンス変化を利用して、タッチ位置識別を行う布型タッチインタフェースを提案する。ユーザは布表面をタッチパッドのように扱うことができ、様々なインタラクションを行うことが可能となる。プロトタイプとして、導電布、ブレッドボード上の電子回路およびmbedを使用したハードウェアを作成し、機械学習を利用した認識ソフトウェアを開発した。
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<hr />
 
 				<h2>学内活動</h2>
 				<ul>
